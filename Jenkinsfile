@@ -19,7 +19,7 @@ mavenNode {
       stage('Build Release'){
         mavenCanaryRelease {
           version = canaryVersion
-          serviceName = 'sonarubeServer'
+          serviceName = 'ec2-54-202-163-36.us-west-2.compute.amazonaws.com'
         }
         //stash deployment manifests
         stash includes: '**/*.yml', name: stashName
