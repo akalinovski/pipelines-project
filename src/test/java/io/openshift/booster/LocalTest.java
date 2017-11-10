@@ -53,7 +53,7 @@ public class LocalTest extends AbstractBoosterApplicationTest {
 
     @Test
     public void testStopServiceEndpoint() {
-        when().get("/api/stop")
+        when().get("/api/stop1")
                 .then()
                 .statusCode(200);
 
