@@ -19,6 +19,7 @@ mavenNode {
       stage('Build Release'){
         mavenCanaryRelease {
           version = canaryVersion
+          serviceName = 'sonarubeServer'
         }
         //stash deployment manifests
         stash includes: '**/*.yml', name: stashName
